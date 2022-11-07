@@ -17,7 +17,7 @@
         changeMonth: true,
         changeYear: true,
         yearRange: "-100:+0",
-        dateformat: "yyyy-mm-dd"
+        dateformat: "mm-dd-yyyy"
         })
     } );
     </script>
