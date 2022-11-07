@@ -13,6 +13,7 @@
         if($result){
             header("location: viewrecords.php");
             include 'includes/successmessage.php';
+            
         }
         else{
             echo '';

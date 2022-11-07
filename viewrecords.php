@@ -1,5 +1,5 @@
 <?php
-    $title = "View Record";
+    $title = "View All Record";
     require_once 'includes/header.php'; 
     require_once 'db/conn.php';
 
@@ -11,7 +11,7 @@
         <th>#</th>
         <th>First Name</th>
         <th>Last Name</th>
-        <th>Date of Birth</th>
+       <!-- <th>Date of Birth</th>-->
         <th>Specialty</th>
         <!--<th>Email</th>
         <th>Phone #</th>-->
@@ -23,7 +23,6 @@
             <td><?php echo $r['attendeeID']?></td>
             <td><?php echo $r['firstname']?></td>
             <td><?php echo $r['lastname']?></td>
-            <td><?php //echo $r['dateOfBirth']?></td>
             <td><?php echo $r['name']?></td> <!--reference name from specialty table instead of specialty id-->
            
             <td><a href="view.php?id=<?php echo $r['attendeeID']?>" class="btn btn-primary">View</a>

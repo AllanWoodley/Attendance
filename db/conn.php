@@ -1,9 +1,15 @@
 <?php 
-
-    $host = "127.0.0.1";////"applied-web.mysql.database.azure.com";
+//DEVELOPEMENT CONNECTION
+  /*  $host = "127.0.0.1";////"applied-web.mysql.database.azure.com";
     $db = "attendancedb";//awoodley_
     $user = "root";////"appliedweb_user@applied-web";
     $pass = "";//"P@ssword1";//
+    $charset = "utf8mb4";*/
+
+    $host = "remotemysql.com";
+    $db = "N4TuDsQ1Nv";
+    $user = "N4TuDsQ1Nv";
+    $pass = "2hKoaXIvDB";
     $charset = "utf8mb4";
 
     $dsn = "mysql:host=$host;dbname=$db;charset=$charset";

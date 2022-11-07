@@ -53,19 +53,40 @@ class crud{
     }
     }
 
-    public function getAttendeeDetails($id){
-        try{
-            $sql = "select * from `attendees` a inner join specialty s on a.specialtyID = s.specialtyID where attendeeID = :id";
-            $stmt = $this ->db ->prepare($sql); 
-            $stmt->bindparam(':id',$id);
-            $stmt->execute();
-            $results = $stmt->fetch();
-            return $results;
-         }catch(PDOException $e){
+   public function getAttendeeDetails($id){
+    try{
+        $sql = 'select * from attendees where attendeeID = :id';
+        $stmt = $this->db->prepare($sql);
+        $stmt->bindparam(':id',$id);
+        $stmt->execute();
+        $result = $stmt->fetch();
+        return $result;
+        }catch(PDOException $e){
             echo $e->getMessage();
+            return false;
+        }
+   }
+
+   public function editAttendee($id,$firstname,$lastname,$dateOfBirth,$specialtyID,$email,$num){
+        try{
+            $sql = "UPDATE `attendees` SET `firstname`=:firstname,`lastname`=:lastname,`dateOfBirth`=:dob,
+            `specialtyID`=:specialtyID,`email`=:email,`num`=:num WHERE attendeeID = :id";
+            $stmt = $this -> db -> prepare($sql);    
+            $stmt ->bindparam(':id',$id);
+            $stmt ->bindparam(':firstname',$firstname);
+            $stmt ->bindparam(':lastname',$lastname);
+            $stmt ->bindparam(':dob',$dateOfBirth);
+            $stmt ->bindparam(':specialtyID',$specialtyID);
+            $stmt ->bindparam(':email',$email);
+            $stmt ->bindparam(':num',$num);
+
+            $stmt -> execute();
+            return true;
+        }catch(PDOException $e){
+        echo $e->getMessage();
         return false;
-    }
-    }
+        }
+   }
 
     public function deleteAttendee($id){
         try{
@@ -79,6 +100,8 @@ class crud{
             return false;
         }
     }
+
+ 
 
 }
 

@@ -28,7 +28,7 @@ $results = $crud->getSpecialties();
           <!--  -->
             <div class ="form-group">
             <label for="specialty"> Area of expertise</label>
-            <select multiple class="form-control" id="specialtyID"name ="specialtyID">
+            <select class="form-control" id="specialtyID"name ="specialtyID">
                <!-- <option value = "1" >Database Admin</option>
                 <option value = "2">Software Developer</option>
                 <option value = "3">Web Admin</option>
