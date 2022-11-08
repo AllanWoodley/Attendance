@@ -1,16 +1,16 @@
 <?php 
 //DEVELOPEMENT CONNECTION
-    $host = "127.0.0.1";////"applied-web.mysql.database.azure.com";
+   /* $host = "127.0.0.1";////"applied-web.mysql.database.azure.com";
     $db = "attendancedb";//awoodley_
     $user = "root";////"appliedweb_user@applied-web";
     $pass = "";//"P@ssword1";//
-    $charset = "utf8mb4";
+    $charset = "utf8mb4";*/
 
-    /*$host = "remotemysql.com";
+    $host = "remotemysql.com";
     $db = "N4TuDsQ1Nv";
     $user = "N4TuDsQ1Nv";
     $pass = "2hKoaXIvDB";
-    $charset = "utf8mb4";*/
+    $charset = "utf8mb4";
 
     $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 
