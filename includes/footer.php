@@ -13,12 +13,15 @@
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script>
     $( function() {
-        $( "#dob" ).datepicker( {
-        changeMonth: true,
-        changeYear: true,
-        yearRange: "-100:+0",
-        dateformat: "mm-dd-yyyy"
-        })
+        $("#dob"). datepicker({ dateFormat: 'yy-mm-dd' });
+
+
+       // $( "#dob" ).datepicker( {
+        //changeMonth: true, 
+        //changeYear: true,
+        //yearRange: "-100:+0",
+        //dateformat: "YYYY-MM-DD"
+        //})
     } );
     </script>
 </body>

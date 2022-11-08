@@ -13,7 +13,7 @@ if(isset($_POST["re-submit"])){
 
         $result = $crud->editAttendee($id,$firstname,$lastname,$dateOfBirth,$specialtyID,$email,$num);
             if($result){
-                header("Location: view.php");
+                header("Location: viewrecords.php");
             }
 
     }

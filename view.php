@@ -17,9 +17,9 @@
     <h5 class="card-title">        
         <?php  echo $result['firstname'] . ' ' . $result['lastname']; ?>
     </h5>
-    <p class="card-text">Date of Birth:<?php echo $result['dateOfBirth']; ?></p>
-    <p class="card-text">Email:<?php echo $result['email']; ?></p>
-    <p class="card-text">Contact:<?php echo $result['num']; ?></p>
+    <p class="card-text">Date of Birth: <?php echo $result['dateOfBirth']; ?></p>
+    <p class="card-text">Email: <?php echo $result['email']; ?></p>
+    <p class="card-text">Contact: <?php echo $result['num']; ?></p>
 
   </div>
 </div>
